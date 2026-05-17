@@ -115,6 +115,13 @@ var pagelayer_recaptch_version = "";
 	.about__awards {
 		display: none !important;
 	}
+	.cookieconsent {
+		display: none !important;
+	}
+	html.portfolio-ready .wrapper {
+		margin-top: 0 !important;
+		transform: none !important;
+	}
 </style>
 </head>
 
@@ -1667,6 +1674,7 @@ Future Mobility Concept					</div>
 						var preloader = document.querySelector(".main-preloader");
 
 						html.setAttribute("data-template", "homepage");
+						html.classList.add("portfolio-ready");
 						html.classList.remove("no-scrollbar");
 						document.body.classList.remove("bg-transition");
 
